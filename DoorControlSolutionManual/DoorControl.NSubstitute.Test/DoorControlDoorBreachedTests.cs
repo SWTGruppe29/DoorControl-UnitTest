@@ -5,41 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using DoorControl;
+using NSubstitute;
 
 namespace DoorControl.NSubstitute.Test
 {
     [TestFixture]
     public class DoorControlDoorBreachedTests
     {
-        private DoorControl _doorControl;
-        private IUserValidation _userValidation;
-        private IDoor _door;
-        private IEntryNotification _entryNotification;
-        private IAlarm _alarm;
+        private DoorControl _uut;
+        private IDoorControlFactory _doorControlFactory;
 
         [SetUp]
         public void Setup()
         {
-            //_mockFactory = new Substitute.For<MockDoorControlFactory>();
-            //var _uut = new DoorControl(_mockFactory);
+            _doorControlFactory = new NSubstituteDoorControlFactory();
+            _uut = new DoorControl(_doorControlFactory);
         }
 
         [Test]
         public void DoorBreached_DoorStateIsBreached()
         {
-
+            _uut.DoorOpened();
+            Assert.That(_doorControlFactory.CreateAlarm().Equals(false));
         }
-
-            /*
-                     private DoorControl _uut;
-        private MockDoorControlFactory _mockFactory;
-
-        [SetUp]
-        public void Setup()
-        {
-            _mockFactory = new MockDoorControlFactory();
-            _uut = new DoorControl(_mockFactory);
-        }
+/*
 
         [Test]
         public void DoorBreached_DoorStateIsBreached()
