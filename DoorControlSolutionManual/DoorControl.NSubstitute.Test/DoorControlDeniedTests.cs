@@ -12,13 +12,13 @@ namespace DoorControl.NSubstitute.Test
     class DoorControlDeniedTests
     {
         private DoorControl _uut;
-        private MockDoorControlFactory _mockFactory;
+        private IDoorControlFactory _doorControlFactory;
 
         [SetUp]
         public void Setup()
         {
-            _mockFactory = new MockDoorControlFactory();
-            _uut = new DoorControl(_mockFactory);
+            _doorControlFactory = new NSubstituteDoorControlFactory();
+            _uut = new DoorControl(_doorControlFactory);
         }
 
         [Test]

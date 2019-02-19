@@ -60,6 +60,7 @@
     <Compile Include="DoorControlDeniedTests.cs" />
     <Compile Include="DoorControlDoorBreachedTests.cs" />
     <Compile Include="DoorControlEntryGrantedTests.cs" />
+    <Compile Include="NSubstituteDoorControlFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
