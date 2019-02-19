@@ -26,6 +26,15 @@
             _doorState = State.DoorClosed;
         }
 
+        public DoorControl(IUserValidation userValidation, IDoor door, IEntryNotification entryNotification,
+            IAlarm alarm)
+        {
+            _userValidation = userValidation;
+            _alarm = alarm;
+            _door = door;
+            _entryNotification = entryNotification;
+        }
+
         public void RequestEntry(string id)
         {
             switch (_doorState)
