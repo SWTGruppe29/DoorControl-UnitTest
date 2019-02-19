@@ -65,6 +65,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DoorControl.Test.Unit\DoorControl.Test.Unit.csproj">
+      <Project>{B5C8757F-09E3-48F5-B3EB-78186A36E4AE}</Project>
+      <Name>DoorControl.Test.Unit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DoorControl\DoorControl.csproj">
+      <Project>{521807F0-C7CF-495B-B197-8E465C2FD7CB}</Project>
+      <Name>DoorControl</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
