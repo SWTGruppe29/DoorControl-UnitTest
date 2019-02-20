@@ -4,6 +4,7 @@ namespace DoorControl
     {
         void Open();
         void Close();
+
     }
 
 }
