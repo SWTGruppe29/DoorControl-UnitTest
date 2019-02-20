@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoorControl.NSubstitute.Tes
 		{521807F0-C7CF-495B-B197-8E465C2FD7CB} = {521807F0-C7CF-495B-B197-8E465C2FD7CB}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{1333FB7A-3622-43EB-921C-A8528E1ECF49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{4E1FDC1C-F399-4FEA-8046-2757FD778E6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E1FDC1C-F399-4FEA-8046-2757FD778E6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E1FDC1C-F399-4FEA-8046-2757FD778E6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1333FB7A-3622-43EB-921C-A8528E1ECF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1333FB7A-3622-43EB-921C-A8528E1ECF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1333FB7A-3622-43EB-921C-A8528E1ECF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1333FB7A-3622-43EB-921C-A8528E1ECF49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
